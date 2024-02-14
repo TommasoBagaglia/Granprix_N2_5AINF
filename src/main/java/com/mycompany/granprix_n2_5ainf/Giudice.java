@@ -1,5 +1,10 @@
 package com.mycompany.granprix_n2_5ainf;
 
+/*import java.io.FileReader;
+import java.io.IOException;
+import java.io.BufferedReader;
+*/
+
 public class Giudice {
     //Metodi annuncia inizio e fine gara
     
