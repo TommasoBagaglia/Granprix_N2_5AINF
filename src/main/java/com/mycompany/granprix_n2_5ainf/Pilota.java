@@ -1,9 +1,24 @@
 package com.mycompany.granprix_n2_5ainf;
 
 public class Pilota {
-    String password;
-    int matricola;
-    String macchina;
+    String Password;
+    String Username;
+    String Macchina;
 
-    //Inserire i metodi "accedi" e "scegli auto"
+    public Pilota(String username, String password, String macchina) {
+        this.Username = username;
+        this.Password = password;
+        this.Macchina = macchina;
+    }
+
+    //Metodo Accedi
+
+    //Metodo impostaLunghezza
+
+    //Metodo impostaGiri (si potrebbe integrare nel metodo "impostaLunghezza")
+
+    //Metodo scegliMacchina (scelta e modifiche di prestazioni)
+
+    //Metodo fermaMacchina (invoca anche la safety car)
+
 }
