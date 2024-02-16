@@ -12,7 +12,7 @@ public class Giudice extends Thread {
     public void mostraAndamentoGara(Pilota[] piloti) {
         System.out.println("Andamento della gara:");
         for (Pilota pilota : piloti) {
-            System.out.println("Pilota: " + pilota.Username + ", Macchina: " + pilota.Macchina + ", Posizione: " + pilota.getPosizione());
+            System.out.println("Pilota: " + pilota.nome + ", Macchina: " + pilota.Macchina + ", Posizione: " + pilota.getPosizione());
         }
     }
 }

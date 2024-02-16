@@ -1,5 +1,6 @@
 package com.mycompany.granprix_n2_5ainf;
 import java.util.Scanner;
+import java.lang.InterruptedException;
 // commento al 16/02/2024
 public class Giocatore extends Thread {
   String Password;
@@ -58,14 +59,23 @@ public class Giocatore extends Thread {
 
   //Metodo fermaMacchina che servirà in caso di incidente invocando anche la safety car
   public void fermaMacchina(){
-  
-    Pilota.wait();
+  try{
+    p1.wait();
     safetyCar = true;
+    }
+    catch(InterruptedException e){
+       System.out.println("la saefty car non è partita");
+    }
   }
 
   //Metodo avviaMacchina
   public void avviaMacchina(){
     safetyCar = false;
-    Pilota.notifyAll();
-  }
+    try {
+    1.notifyAll();
+    }
+    catch(InterruptedException e){
+       System.out.println("la saefty car non è partita");
+    }
+   }
 }
