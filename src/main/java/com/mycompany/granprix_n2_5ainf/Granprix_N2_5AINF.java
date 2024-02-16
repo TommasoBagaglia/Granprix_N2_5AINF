@@ -1,4 +1,5 @@
- import java.util.Random;
+package com.mycompany.granprix_n2_5ainf;
+// commento al 16/02/2024
 public class Granprix_N2_5AINF {
     public static void main(String[] args) {
         Thread giudice = new Giudice();

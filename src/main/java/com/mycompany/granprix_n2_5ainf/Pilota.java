@@ -1,5 +1,5 @@
 package com.mycompany.granprix_n2_5ainf;
-
+// commento al 16/02/2024
 import java.util.Scanner;
 
 public class Pilota extends Thread {

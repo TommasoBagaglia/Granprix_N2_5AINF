@@ -1,6 +1,6 @@
 package com.mycompany.granprix_n2_5ainf;
 import java.util.Scanner;
-
+// commento al 16/02/2024
 public class Giocatore extends Thread {
   String Password;
   String Username;
