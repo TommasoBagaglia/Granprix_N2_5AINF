@@ -4,6 +4,6 @@
  */
 package com.mycompany.granprix_n2_5ainf;
 // commento al 23/02/2024 
-public class Auto {
+public class Auto  {
     //modfica correttiva 
 }
