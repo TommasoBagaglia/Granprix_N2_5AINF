@@ -1,29 +1,38 @@
 package com.mycompany.granprix_n2_5ainf;
-// commento al 23/02/2024 
-import java.util.Scanner;
 
-public class Pilota extends Thread {
-  String Nome;
-  String Macchina;
+public class Pilota {
+    private String nome;
+    private String macchina;
+    private int posizione;
+    private int punteggioGara = 0; //Punteggio accumulato durante la gara
 
-  Scanner in = new Scanner(System.in); //istanzia un oggetto lettore di tipo Scanner
-
-  public Pilota(String Nome, String Macchina) {
-      this.Nome = Nome;
-      this.Macchina = Macchina;
-  }
-  
-  
-   /*public void run(){
-    //Metodo scegliMacchina (scelta e modifiche di prestazioni)
-    public void scegliMacchina(String Macchina){
-        System.out.println("Scegli la macchina (tra BMW, Mercedes e Audi): ");
-        Macchina = in.nextLine();
+    public Pilota(String nome, String macchina) {
+        this.nome = nome;
+        this.macchina = macchina;
     }
 
-    **/
-  }
+    public void aggiornaPunteggio(int punteggio) {
+        this.punteggioGara += punteggio;
+    }
 
- 
+    //Metodi getter e setter
+    public int getPunteggioGara() {
+        return this.punteggioGara;
+    }
 
- 
+    public void setPosizione(int posizione) {
+        this.posizione = posizione;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getMacchina() {
+        return macchina;
+    }
+
+    public int getPosizione() {
+        return posizione;
+    }
+}

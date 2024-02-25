@@ -4,6 +4,7 @@ public class Circuito {
   int Lunghezza;
   int nGiri;
   int nPS;
+  
   public Circuito(int Lunghezza, int nGiri, int nPS) {
     this.Lunghezza = Lunghezza;
     this.nGiri = nGiri; 
