@@ -6,11 +6,10 @@ Questo progetto implementa una simulazione di una gara di Formula 1, consentendo
 
 Il progetto è suddiviso in diverse classi:
 
-- Auto.java: Rappresenta un'auto con la sua marca e velocità massima.
 
 - Circuito.java: Rappresenta un circuito con la sua lunghezza, numero di giri e pitstop.
 
-- Giocatore.java: Rappresenta un giocatore con username e password cifrata.
+- Giocatore.java: Rappresenta un giocatore con username.
 
 - Giudice.java: Gestisce l'annuncio dell'inizio e della fine della gara, mostra l'andamento della gara e annuncia il vincitore.
 
